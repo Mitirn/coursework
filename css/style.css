@@ -1,0 +1,213 @@
+/*Общее*/
+
+@font-face{
+font-family: "Segou UI", sans-serif;
+    src: url(../fonts/SegouUI.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segou UI",sans-serif;
+    color: white;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+
+
+ul li a{
+    position: relative;
+    display: block;
+    padding: 29px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+li:hover{
+    transition: 0.3s;
+    background: #50597b;
+    border-bottom: 4px solid #11a8ab;
+}
+ul li.active a{
+    background: #50597b;
+    border-bottom: -4px solid #11a8ab;
+}
+/*Шапка*/
+.header{
+    width: 100%;
+    height: 80px;
+    background: #394264;
+}
+.header__logo{
+    margin-top: -12px;
+    padding-left: 50px;
+    display: flex;
+}
+.header__logo p{
+    font-size: 24px;
+    padding-top: 25px;
+    margin-left: -15px;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+height: 80px;
+}
+
+.header__slogan{
+    margin-top: -20px;
+    padding-left: 65px;
+    font-size: 13px;
+}
+
+.header__profile{
+    margin-top: 5px;
+    padding-right: 40px;
+}
+
+
+/*Контент*/
+.content{
+    width: 100%;
+    height: 500px;
+    background: #1f253d;
+    display: flex;
+    overflow: hidden;
+}
+.content__left{
+    width: 600px;
+    height: 100%;
+    float: left;
+}
+.content__left img{
+    margin-top: 50px;
+}
+.content_right{
+    height: 100%;
+    width: 100%;
+    padding-top: 15px;
+}
+.content__passage{
+    width: 100%;
+    height: 160px;
+    padding-top: 50px;
+}
+.passage__text{
+    height: 100%;
+    width: 300px;
+    margin-left: 75px;
+    font-size: 20px;
+}
+.passage__text hr{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 700px;
+    border: 1.5px solid white;
+}
+.aut{
+    text-align: right;
+}
+.content__right_down{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.content__agitation{
+    height: 100%;
+    width: 50%;
+}
+.content__agitation p{
+    padding-top: 20px;
+    margin-left: 75px;
+    font-size: 18px;
+}
+.content__button{
+    padding-top: 10px;
+    height: 100%;
+    width: 50%;
+}
+.content__button button{
+    margin-left: 30px;
+    background: none;
+    border: 2.5px solid #13a5a9;
+    font-size: 16px;
+    padding: 7px 13px;
+    cursor: pointer;
+
+}
+.content__button button:hover{
+    transition : 0.8s;
+    background: #13a5a9
+
+}
+/*Подвал*/
+.footer{
+    width: 100%;
+    height: 150px;
+    background: #394264;
+    display: flex;
+
+}
+
+.footer__left{
+    height: 100%;
+    width: 615px;
+}
+
+.footer__left p{
+    font-size: 20px;
+    padding-left: 30px;
+    margin-top: 100px;
+}
+
+.footer__right{
+    height: 100%;
+    width: 685px;
+    display: flex;
+    margin-left: 300px;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.footer__sup{
+    height: 100%;
+    width: 250px;
+}
+
+.footer__phone{
+    height: 100%;
+    width: 250px;
+}
+.footer__info{
+    height: 100%;
+    width: 421px;
+}
+.footer__info button{
+    background: none;
+    border: none;
+    cursor: pointer
+}
+.pUp{
+    font-size: 16px;
+}
+.pDown{
+    font-size: 13px;
+}
+@media screen and (max-width : 1200px){
+    .menu li{
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 60px;
+
+}
+
+}
